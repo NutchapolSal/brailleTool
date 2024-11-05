@@ -39,7 +39,11 @@
 	</div>
 	<div class="displayBlock">
 		<div class="displayRow">
-			<button>copy</button>
+			<button
+				onclick={() => {
+					navigator.clipboard.writeText(braille);
+				}}>copy</button
+			>
 			<span class="brailleDisplay">{braille}</span>
 		</div>
 		<span class="description"
